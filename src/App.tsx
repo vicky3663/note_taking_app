@@ -95,7 +95,7 @@ function App() {
   }
 
   return (
-    <Container  className="my-4">
+    <Container className="my-4" style={{ backgroundColor: "skyblue", minHeight: "100vh" }}>
       <Routes>
         <Route
           path="/"
@@ -134,7 +134,8 @@ function App() {
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Container>
-  )
+  );
+  
 }
 
 export default App
